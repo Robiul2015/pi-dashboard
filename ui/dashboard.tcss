@@ -16,15 +16,6 @@ Screen {
     margin: 0;
 }
 
-#goals-box {
-    border: none;
-    padding: 0;
-}
-
-#goals-box .section-title {
-    padding-left: 1;
-}
-
 .section-title {
     text-style: bold;
     color: #ffffff;
@@ -43,7 +34,3 @@ ListItem {
     height: 1;
 }
 
-#goals-list ListItem {
-    padding-left: 0;
-    height: 1;
-}

@@ -26,13 +26,13 @@ class DashboardApp(App):
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
         with Container(id="dashboard-grid"):
-            with Vertical(classes="box", id="calendar-box"):
-                yield Label("📅 UPCOMING EVENTS", classes="section-title")
-                yield ListView(id="calendar-list")
-
             with Vertical(classes="box", id="goals-box"):
                 yield Label("🎯 DAILY GOALS", classes="section-title")
                 yield ListView(id="goals-list")
+
+            with Vertical(classes="box", id="calendar-box"):
+                yield Label("📅 UPCOMING EVENTS", classes="section-title")
+                yield ListView(id="calendar-list")
 
         yield Footer()
 
