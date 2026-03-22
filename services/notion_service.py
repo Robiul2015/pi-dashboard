@@ -59,7 +59,7 @@ class NotionService:
             for item in results:
                 name, alarm_time = self._parse_item(item)
                 if alarm_time:
-                    goals.append(f"{name} [{alarm_time}]")
+                    goals.append(f"\\[{alarm_time}] {name}")
                     alarms.append({"name": name, "alarm": alarm_time})
                 else:
                     goals.append(name)

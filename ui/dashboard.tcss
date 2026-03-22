@@ -3,20 +3,26 @@ Screen {
     color: #4af626; /* Hacker Green */
 }
 
-/* Container defining the grid */
 #dashboard-grid {
     layout: grid;
-    /* 2 columns, rows to auto flow based on content */
     grid-size: 1 2;
     grid-columns: 1fr;
     grid-rows: 1fr 1fr;
 }
 
-/* Base style for widget wrappers */
 .box {
     border: round #4af626;
     padding: 0 1;
     margin: 0;
+}
+
+#goals-box {
+    border: none;
+    padding: 0;
+}
+
+#goals-box .section-title {
+    padding-left: 1;
 }
 
 .section-title {
@@ -37,12 +43,7 @@ ListItem {
     height: 1;
 }
 
-#calendar-box {
-    column-span: 1;
-    row-span: 1;
-}
-
-#goals-box {
-    column-span: 1;
-    row-span: 1;
+#goals-list ListItem {
+    padding-left: 0;
+    height: 1;
 }

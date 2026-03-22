@@ -57,7 +57,7 @@ class DashboardApp(App):
             self.query_one("#calendar-list").append(ListItem(Label(event)))
 
         for goal in goals:
-            self.query_one("#goals-list").append(ListItem(Label(f"• {goal}")))
+            self.query_one("#goals-list").append(ListItem(Label(goal)))
 
     async def _check_alarms(self) -> None:
         """Check cached alarm data — no extra API call."""

@@ -62,7 +62,7 @@ class CalendarService:
                     time_str = f"{dt.strftime('%b %d')} All Day"
 
                 summary = event.get('summary', '(No title)')
-                formatted_events.append(f"[{time_str}] {summary}")
+                formatted_events.append(f"\\[{time_str}] {summary}")
             return formatted_events
         except Exception as e:
             return [f"Calendar Error: {e}"]
