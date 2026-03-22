@@ -1,0 +1,10 @@
+.env
+.claude/
+token.json
+credentials.json
+dashboard.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+tmp/

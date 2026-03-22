@@ -1,0 +1,48 @@
+Screen {
+    background: $background;
+    color: #4af626; /* Hacker Green */
+}
+
+/* Container defining the grid */
+#dashboard-grid {
+    layout: grid;
+    /* 2 columns, rows to auto flow based on content */
+    grid-size: 1 2;
+    grid-columns: 1fr;
+    grid-rows: 1fr 1fr;
+}
+
+/* Base style for widget wrappers */
+.box {
+    border: round #4af626;
+    padding: 0 1;
+    margin: 0;
+}
+
+.section-title {
+    text-style: bold;
+    color: #ffffff;
+    padding-bottom: 0;
+    background: green;
+    width: 100%;
+}
+
+ListView {
+    background: transparent;
+    color: #4af626;
+}
+
+ListItem {
+    padding-left: 1;
+    height: 1;
+}
+
+#calendar-box {
+    column-span: 1;
+    row-span: 1;
+}
+
+#goals-box {
+    column-span: 1;
+    row-span: 1;
+}
